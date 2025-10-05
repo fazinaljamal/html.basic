@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulir Umpan Balik</h1>
+    <h3>Kritik, Saran, dan Masukkan</h3>
+    <hr>
+  <nav>
+    <a href="index.html" >Beranda</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="jadwal.html">Jadwal</a>
+    <a href="galeri.html" >Galeri</a>
+    <a href="feedback.html" class="active">Feedback</a>
+  </nav>
+  <hr>
+  <br>
+
+  <div class="box">
+  <h2 class="section-title">Formulir Feedback</h2>
+  <form action="proses.php" method="post">
+
+
+    <form>
+      <div>
+        <label for="namalengkap">Nama Lengkap</label>
+        <input type="text" name="nama_lengkap" id="namalengkap" />
+      </div>
+
+      <div>
+        <label for="umur">Umur</label>
+        <input type="number" name="umur" id="umur" />
+      </div>
+
+      <div>
+        <label for="tgllahir">Tanggal Lahir</label>
+        <input type="date" name="tgl_lahir" id="tgllahir" />
+      </div>
+
+      <div>
+        <label for="alamatemail">Alamat Email</label>
+        <input type="email" name="email" id="alamatemail" />
+      </div>
+
+      
+      <div>
+        <p>Jenis Kelamin</p>
+        <input type="radio" name="jenis_kelamin" id="lakilaki" value="L" />
+        <label for="lakilaki">Laki-laki</label>
+        <input type="radio" name="jenis_kelamin" id="perempuan" value="P" />
+        <label for="perempuan">Perempuan</label>
+      </div>
+
+      <div>
+        <p>Minat</p>
+        <input type="checkbox" name="minat" id="english" value="English" />
+        <label for="english">English</label>
+        <input type="checkbox" name="minat" id="japan" value="Japan" />
+        <label for="japan">Japan</label>
+      </div>
+
+      <div>
+        <label for="asal_daerah">Asal Daerah</label>
+        <select name="asal_daerah" id="asal_daerah">
+          <option value="purwerejo">Purwerejo</option>
+          <option value="jogja">Jogja</option>
+          <option value="jakarta">Jakarta</option>
+        </select>
+      </div>
+      
+      <div>
+        <p>Seberapa puas Anda?</p>
+        <input type="radio" name="rating" id="sangatkurang" value="1" />
+        <label for="sangatkurang">1</label><br>
+        <input type="radio" name="rating" id="kurang" value="2" />
+        <label for="kurang">2</label><br>
+        <input type="radio" name="rating" id="cukup" value="3" />
+        <label for="cukup">3</label><br>
+        <input type="radio" name="rating" id="puas" value="4" />
+        <label for="puas">4</label><br>
+        <input type="radio" name="rating" id="sangatpuas" value="5" />
+        <label for="sangatpuas">5</label><br>
+        
+        
+        
+        
+      </div>
+
+      <div>
+        <label for="pesan">Kritik / Saran</label><br>
+        <textarea name="pesan" id="pesan" rows="5" cols="40" placeholder="Tuliskan masukkan Anda..."></textarea>
+      </div>
+
+      <div class="grid">
+        <button type="reset">Batal</button>
+        <button type="submit">Kirim</button>
+      </div>
+
+    </form>
+
+  </main>
+</div>
+
+  
+    
+</body>
+</html>

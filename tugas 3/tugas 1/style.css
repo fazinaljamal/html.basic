@@ -1,0 +1,228 @@
+/* RESET DASAR */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 120px;
+  background: #f9fafb;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* LOGO */
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+}
+
+/* JUDUL */
+h1 {
+  text-align: center;
+  color: #1b59a0;
+  margin-bottom: 0;
+}
+h2 {
+  color: #111827;
+}
+h3 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: normal;
+
+}
+.section-title {
+  color: #3437db !important;  /* biru */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* NAVIGASI */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 9999px; /* bikin setengah bulat */
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(37, 99, 235, 0.08);
+  color: #1d4ed8;
+}
+
+nav a.active {
+  background: #2d22c5;
+  color: white;
+  border: 1px solid #1624a3;
+}
+
+/* BOX */
+.box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* JUDUL DI DALAM BOX */
+.section-title {
+  padding-left: 10px;
+  border-left: 4px solid #c5ad22;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* FOTO PROFIL BULAT */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+  
+}
+hr {
+  border: none;              /* hapus border bawaan */
+  border-top: 1px solid #ddd; /* garis tipis abu muda */
+  margin: 15px auto;         /* jarak atas bawah */
+  width: 80%;                /* panjang garis */
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #4c5baf;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+} 
+figure {     
+  margin: 15px;
+}
+
+figure figcaption {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;        /* tulisan tipis */
+  opacity: 0.8;            /* bikin lebih pudar */
+}
+.foto {
+  width: 200px;
+  height: 300px;       /* bentuk landscape */
+  object-fit: cover;   /* crop biar pas */
+  border-radius: 8px;
+}
+/* GALERI FOTO */
+.gallery {
+  display: flex;           /* bikin foto berdampingan */
+  flex-wrap: wrap;         /* kalau layar kecil, otomatis turun */               /* jarak antar foto */
+  justify-content: center; /* biar rata tengah */
+}
+
+.gallery figure {
+  text-align: center;  
+  width: 200px;            /* lebar kotak tiap foto */
+}
+.video-container {
+  text-align: center;   /* bikin isi div ketengah */
+}
+
+.video-container iframe {
+  max-width: 100%;      /* biar responsif */
+  border-radius: 8px;   /* opsional, sudut melengkung */
+}
+/* Bagian FORM */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+/* Input teks, angka, tanggal, email, password, dan select */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Radio & checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+form p {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+/* Tombol di bagian bawah */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+
+
+
+
+
+
